@@ -1,0 +1,117 @@
+<!DOCTYPE>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>FreeCodeCamp | Survey Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body class="container">
+        <h1 id= "title">FreeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <main class="survey-container">
+            <article class="survey-article-text">
+                <h2>About FreeCodeCamp</h2>
+                <p> FreeCodeCamp is a community of people from all around the world who are learning to code together. We're a 501(c)(3) public charity..
+                    You will learn to code by building dozens of projects, step-by-step, right in your browser, code editor, or mobile app.
+                    You will also earn free verified certifications along the way.
+                    You will learn the skills most developers use on the job: HTML, CSS, JavaScript, Python, Linux, Git, and SQL, and more. You'll also 
+                    learn how to use powerful libraries for web development, mobile app development, data science, and artificial intelligence.
+                <h3>How long does it take to learn all this?</h3>
+                <p>FreeCodeCamp is self-paced. Realistically, it may take several years of practicing coding to learn these skills well enough to get a 
+                    job as a software engineer. Don't quit school or your day job until you feel ready.</p>
+                </p>
+                <h3>History</h3>
+                <p>FreeCodeCamp was launched in October 2014 and incorporated as Free Code Camp, Inc. The founder, Quincy Larson, is a software developer who 
+                    took up programming after graduate school and created freeCodeCamp as a way to streamline a student's progress from beginner to being job-ready.</p>
+                <h3>Quincy Larson</h3>
+                <p>Quincy Larson was a school director for six years before he started to learn to code so that he could create tools for making schools more efficient.
+                    His own journey into learning to code was long and windin and he recognized the need for a single-track curriculum for newbie developers. 
+                    Upon analyzing data on coding boot camps in the US and realizing how inaccessible coding education was to the masses he set out to create a fully-online 
+                    inclusive free platform for peer-driven learning of coding - the result of which is freeCodeCamp. <br>
+
+                    He lives in Texas with his family and spends his time working on freeCodeCamp, writing and interviewing authors for the freeCodeCamp publication, 
+                    co-ordinating open source projects such as Chapter (a free MeetUp alternative),[10] advocating for a free and open internet and playing with 
+                    his two young kids.
+                </p>
+                <h3>Reception</h3>
+                <p>freeCodeCamp's platform is used by about 350,000 unique visitors per month, with students from over 160 countries.[27]freeCodeCamp has 
+                   international, community-run groups where students can interact in person. Some groups have been featured in local news, citing freeCodeCamp 
+                   as an introduction to programming in order to fill the estimated vacancy in programming-related jobs in the next decade.[2</p>
+            </article>
+            <article class="survey-article">
+                <form id="survey-form">
+                    <label class="with-column"  id="name-label" for="name"><p>Nombre</p>  
+                        <input type="text" id="name" placeholder="Ingrese su nombre" required/>
+                    </label>
+                    <label class="with-column" id="email-label" for="email"> <p>Email</p>  
+                        <input type="email" id="email" placeholder="Ingrese su email" required/>
+                    </label>
+                    <label class="with-column" id="number-label" for="number"> <p>Edad</p> 
+                        <input type="number" id="number" min="1" max="3" placeholder="Ingrese su edad" required/>
+                    </label>
+                    <label class="with-column">
+                        <p>Which option best describes your current role?</p>
+                        <select id="dropdown">
+                            <option value="0" disabled selected>Select current role</option>
+                            <option value="1">Student</option>
+                            <option value="2">Full time job</option>
+                            <option value="3">Full time learner</option>
+                            <option value="4">Prefer not to say</option>
+                            <option value="5">Other</option>
+                        </select>
+                      </label>
+                        <p>Would you recommend freeCodeCamp to a friend?</p>
+                    <label class="survey-form-label" for="yes"> Definitely
+                        <input id="yes" type="radio" name="radio" />
+                    </label>
+                    <label class="survey-form-label" for="maybe">Maybe
+                        <input id="maybe" type="radio" name="radio" />
+                    </label>
+                    <label class="survey-form-label" for="no">Not sure
+                        <input id="no" type="radio" name="radio" />
+                    </label>
+                    <p>What would you like to see improved? (Check all that apply)</p>
+                    <label class="survey-form-label" for="Front-end Projects">Front-end Projects
+                        <input id="Front-end Projects" type="checkbox" value="Front-end Projects" />
+                    </label>
+                    <label class="survey-form-label" for="Back-end Projects">Back-end Projects
+                        <input id="Back-end Projects" type="checkbox" value="Back-end Projects" />
+                    </label>
+                    <label class="survey-form-label" for="Data Visualization">Data Visualization
+                        <input id="Data Visualization" type="checkbox" value="Data Visualization" />
+                    </label>
+                    <label class="survey-form-label" for="Challenges">Challenges
+                        <input id="Challenges" type="checkbox" value="Challenges" />
+                    </label>
+                    <label class="survey-form-label" for="Open Source Community">Open Source Community
+                        <input id="Open Source Community" type="checkbox" value="Open Source Community" />
+                    </label>
+                    <label class="survey-form-label" for="Gitter help rooms">Gitter help rooms
+                        <input id="Gitter help rooms" type="checkbox" value="Gitter help rooms" />
+                    </label>
+                    <label class="survey-form-label" for="Videos">Videos
+                        <input id="Videos" type="checkbox" value="Videos" />
+                    </label>
+                    <label class="survey-form-label" for="City Meetups">City Meetups
+                        <input id="City Meetups" type="checkbox" value="City Meetups" />
+                    </label>
+                    <label class="survey-form-label" for="Wiki">Wiki
+                        <input id="Wiki" type="checkbox" value="Wiki" />
+                    </label>
+                    <label class="survey-form-label" for="Forum">Forum
+                        <input id="Forum" type="checkbox" value="Forum" />
+                    </label>
+                    <label class="survey-form-label" for="Additional Courses">Additional Courses
+                        <input id="Additional Courses" type="checkbox" value="Additional Courses" />
+                    </label>
+                    <label class="with-column"><p>What would you like to see improved? (Check all that apply)</p>
+                        <textarea>
+                        </textarea>
+                    </label>
+                    <input id="submit" type="submit" value="Enviar"/>
+                </form>
+            </article>
+        <main>
+    </body>
+</html>
